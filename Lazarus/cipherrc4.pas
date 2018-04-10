@@ -12,13 +12,13 @@ type
       protected
       private
       public
-        class function Encrypt(Key, Text: AnsiString): String;
-        class function Decrypt(Key, Text: AnsiString): String;
+        class function Encrypt(Key, Text: String): String;
+        class function Decrypt(Key, Text: String): String;
   end;
 
 implementation
 
-class function RC4.Encrypt(Key, Text: AnsiString): String;
+class function RC4.Encrypt(Key, Text: String): String;
 var
   i,j,x,y: Integer;
   s: array[0..255] of Integer;
@@ -75,7 +75,7 @@ begin
   Result := UpperCase(ct);
 end;
 
-class function RC4.Decrypt(Key, Text: AnsiString): String;
+class function RC4.Decrypt(Key, Text: String): String;
 var
    c,i,j,x,y: Integer;
    s: array[0..255] of Integer;
