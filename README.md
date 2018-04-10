@@ -3,8 +3,10 @@ RC4 cipher to Hex for Delphi / Lazarus (Pascal).
 
 ## How to use
 * Delphi
+
 Import the **cipherrc4.pas** file into the same folder as your project.
 * Lazarus
+
 Import the **cipherrc4.pas** and **unicodehelper.pas** files into the same folder as your project. 
 
 Later, in the session *uses* declare:
