@@ -27,6 +27,7 @@ var
   ValEncrypted: String;
   ValDecrypted: String;
 begin
+  // Edit1 has value that will be converted using some MD5 function. In our code, ResultMd5 has that value.
   if (Edit1.Text <> '') and (Edit2.Text <> '') then
   begin
     // Encryption Key
