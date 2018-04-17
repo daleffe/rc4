@@ -41,7 +41,7 @@ begin
     Memo1.Lines.Add('RC4 Encrypted: ' + ResultRc4);
     Memo1.Lines.Add('RC4 Decrypted: ' + RC4.Decrypt(Rc4Key,ResultRc4));
 
-    ValEncrypted := RC4.Encrypt(Rc4Key,Edit3.Text);
+    ValEncrypted := RC4.Encrypt(Rc4Key,String(Edit3.Text));
     ValDecrypted := RC4.Decrypt(Rc4Key,ValEncrypted);
 
     Memo2.Lines.Add(ValEncrypted);
